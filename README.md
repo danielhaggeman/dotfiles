@@ -1,1 +1,1 @@
-yes i vibecoded yes i copied dotfiles
+Hyprland config files for my Garuda setup.
