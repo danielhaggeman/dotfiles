@@ -8,6 +8,9 @@ CONFIG_FOLDERS=(kitty spicetify wal hypr waybar wofi)
 # Ensure dotfiles repo exists
 cd ~/dotfiles || exit
 
+# Force correct SSH remote (in case it's still HTTPS)
+git remote set-url origin git@github.com:danielhaggeman/dotfiles.git
+
 # Copy the selected configs to the repo
 mkdir -p .config
 for folder in "${CONFIG_FOLDERS[@]}"; do
