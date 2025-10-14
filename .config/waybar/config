@@ -13,11 +13,7 @@
         "custom/spotify"
     ],
     "modules-right": [
-        "idle_inhibitor",
         "pulseaudio",
-        "network",
-        "cpu",
-        "memory",
         "clock"
     ],
     //Modules configuration

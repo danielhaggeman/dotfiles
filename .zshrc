@@ -10,8 +10,6 @@ printf "\n"
 fastfetch
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$HOME/.spicetify:$PATH"
-export STEAM_FORCE_X11=1
-
 ZSH_THEME="agnosterzak"
 
 plugins=(
@@ -21,7 +19,7 @@ plugins=(
     zsh-syntax-highlighting
 )
 
-source $ZSH/oh-my-zsh.sh
+#source $ZSH/oh-my-zsh.sh
 
 # Check archlinux plugin commands here
 # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/archlinux
@@ -33,11 +31,6 @@ source $ZSH/oh-my-zsh.sh
 
 # fastfetch. Will be disabled if above colorscript was chosen to install
 # Set-up icons for files/directories in terminal using lsd
-alias ls='lsd'
-alias l='ls -l'
-alias la='ls -a'
-alias lla='ls -la'
-alias lt='ls --tree'
 
 # Set-up FZF key bindings (CTRL R for fuzzy history finder)
 source <(fzf --zsh)
@@ -51,3 +44,8 @@ setopt appendhistory
 PROMPT='%n %~ %# '
 
 
+
+export PATH=$PATH:/home/daniel/.spicetify
+export PATH="$HOME/.spicetify-cli:$PATH"
+export SDL_VIDEODRIVER=x11
+export SDL_VIDEODRIVER=x11

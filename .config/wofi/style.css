@@ -1,51 +1,47 @@
-window {
-margin: 0px;
-border: 1px solid #bd93f9;
-background-color: #282a36;
+* {
+    font-family:  Spacemono Nerd Font;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+#window {
+    margin: 0px;
+    border: 2px solid #94e2d5;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 #input {
-margin: 5px;
-border: none;
-color: #f8f8f2;
-background-color: #44475a;
-}
-
-#inner-box {
-margin: 5px;
-border: none;
-background-color: #282a36;
-}
-
-#outer-box {
-margin: 5px;
-border: none;
-background-color: #282a36;
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #94e2d5;
+    border-radius: 10px;
+    border: 2px solid #94e2d5;
 }
 
 #scroll {
-margin: 0px;
-border: none;
+    margin-bottom: 25px;
 }
 
-#text {
-margin: 5px;
-border: none;
-color: #f8f8f2;
-} 
-
-#entry.activatable #text {
-color: #282a36;
-}
-
-#entry > * {
-color: #f8f8f2;
+#entry {
+    margin: 0px 25px;
 }
 
 #entry:selected {
-background-color: #44475a;
+    background-color: #eba0ac;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color:#561508;
+
 }
 
-#entry:selected #text {
-font-weight: bold;
+#entry > box {
+    margin-left: 15px;
 }
+
+#entry image {
+    padding-right: 10px;
+}
+

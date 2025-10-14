@@ -17,13 +17,6 @@
             "default": ""
         }
     },
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        }
-    },
     "pulseaudio": {
         "format": "{icon}  {volume}%",
         "format-bluetooth": "{icon} {volume}%  {format_source}",
@@ -48,29 +41,20 @@
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
-	"on-click": "sh ~/scripts/rofi-wifi-menu/rofi-wifi-menu.sh"
+	"on-click": "nm-connection-editor"
 	 
-    },
-    "cpu": {
-        "format": "  {usage}%",
-        "tooltip": true
-    },
-    "memory": {
-        "format": "  {}%",
-	"tooltip": true
     },
     "clock": {
         "format": "{:%H:%M | %e %B} ",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
-    "custom/spotify": {
-    "exec": "/usr/bin/python3 ~/.config/hypr/scripts/mediaplayer.py --player spotify",
-    "format": "<span size='17000'></span> {}",
-    "return-type": "json",
-    "on-click": "/home/daniel/bin/spotify-wofi.sh",
-    "on-scroll-up": "playerctl next",
-    "on-scroll-down": "playerctl previous"
+      "custom/spotify": {
+        "interval": 1,
+        "return-type": "json",
+        "exec": "~/.config/waybar/spotify.sh",
+        "exec-if": "pgrep spotify",
+        "escape": true
     }
 
 }
