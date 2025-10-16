@@ -15,7 +15,7 @@ window#waybar {
 }
 
 .modules-left,
-.modules-center, 
+.modules-center,
 .modules-right
 {
     background: rgba(0, 0, 8, .7);
@@ -26,8 +26,8 @@ window#waybar {
 .modules-left {
     padding: 0;
 }
-.modules.center { 
-    padding: 0 10px; 
+.modules-center {
+    padding: 0 10px;
 }
 
 #clock,
@@ -43,9 +43,9 @@ window#waybar {
 #mode,
 #idle_inhibitor,
 #scratchpad,
-#battery,
 #power-profiles-daemon,
-#mpd {
+#mpd, 
+#custom-spotify {
     padding: 0 10px;
     border-radius: 15px;
 }
@@ -63,9 +63,9 @@ window#waybar {
 #mode:hover,
 #idle_inhibitor:hover,
 #scratchpad:hover,
-#battery:hover,
 #power-profiles-daemon:hover,
-#mpd:hover {
+#mpd:hover, 
+#custom-spotify:hover {
     background: rgba(26, 27, 38, 0.9);
 }
 
@@ -103,3 +103,10 @@ window#waybar {
 #custom-arch:hover {
     color: #1793d1;
 }
+
+
+#custom-spotify {
+    padding-left: 0px;    /* remove default padding */
+    margin-left: -5px;    /* shift closer to left edge, adjust as needed */
+}
+

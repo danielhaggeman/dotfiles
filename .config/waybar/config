@@ -10,14 +10,11 @@
         "hyprland/workspaces",    
     ],
     "modules-center": [
-        "clock"
-    ], 
+        "custom/spotify"
+    ],
     "modules-right": [
         "pulseaudio",
-        "network",
-        "cpu",
-        "memory",
-        "battery",
+        "clock"
     ],
     //Modules configuration
 

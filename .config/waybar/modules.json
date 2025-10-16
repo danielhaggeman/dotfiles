@@ -41,33 +41,20 @@
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
-	"on-click": "nm-connection-editor &"
+	"on-click": "nm-connection-editor"
 	 
     },
-    "cpu": {
-        "format": "  {usage}%",
-
-        "tooltip": true
-    },
-    "memory": {
-        "format": "  {}%",
-	"tooltip": true
-    },
     "clock": {
-        "format": "{:%H:%M}",
+        "format": "{:%H:%M | %e %B} ",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
-    "battery": {
-    "format": "{icon} {capacity}%",
-    "format-icons": ["", "", "", "", ""],
-    "states": {
-        "good": 80,
-        "warning": 30,
-        "critical": 15
-    },
-    "format-charging": "{icon} {capacity}% 󰂄",
-    "format-plugged": "{icon} {capacity}% "
+      "custom/spotify": {
+        "interval": 1,
+        "return-type": "json",
+        "exec": "~/.config/waybar/spotify.sh",
+        "exec-if": "pgrep spotify",
+        "escape": true
     }
 
 }

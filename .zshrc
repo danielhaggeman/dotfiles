@@ -7,12 +7,9 @@ if [ -f "$HOME/.cache/wal/colors.sh" ]; then
 fi
 
 printf "\n"
-#fastfetch
+fastfetch
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$HOME/.spicetify:$PATH"
-export STEAM_FORCE_X11=1
-export PATH="$HOME/go/bin:$PATH"
-
 ZSH_THEME="agnosterzak"
 
 plugins=(
@@ -22,7 +19,7 @@ plugins=(
     zsh-syntax-highlighting
 )
 
-source $ZSH/oh-my-zsh.sh
+#source $ZSH/oh-my-zsh.sh
 
 # Check archlinux plugin commands here
 # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/archlinux
@@ -34,6 +31,7 @@ source $ZSH/oh-my-zsh.sh
 
 # fastfetch. Will be disabled if above colorscript was chosen to install
 # Set-up icons for files/directories in terminal using lsd
+
 # Set-up FZF key bindings (CTRL R for fuzzy history finder)
 source <(fzf --zsh)
 
@@ -46,11 +44,8 @@ setopt appendhistory
 PROMPT='%n %~ %# '
 
 
-export PATH=$HOME/.local/bin:$PATH
-export PATH="$PATH:/opt/mssql-tools/bin"
 
-# Fix for unknown terminal types like xterm-kitty
-if [ "$TERM" = "xterm-kitty" ]; then
-  export TERM=xterm
-fi
-
+export PATH=$PATH:/home/daniel/.spicetify
+export PATH="$HOME/.spicetify-cli:$PATH"
+export SDL_VIDEODRIVER=x11
+export SDL_VIDEODRIVER=x11
