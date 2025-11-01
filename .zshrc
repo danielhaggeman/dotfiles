@@ -49,3 +49,8 @@ export PATH=$PATH:/home/daniel/.spicetify
 export PATH="$HOME/.spicetify-cli:$PATH"
 export SDL_VIDEODRIVER=x11
 export SDL_VIDEODRIVER=x11
+# Fix arrow keys in Kitty
+bindkey "^[[A" up-line-or-history
+bindkey "^[[B" down-line-or-history
+bindkey "^[[C" forward-char
+bindkey "^[[D" backward-char
