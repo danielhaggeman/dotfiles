@@ -7,7 +7,7 @@ if [ -f "$HOME/.cache/wal/colors.sh" ]; then
 fi
 
 printf "\n"
-fastfetch
+#fastfetch
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$HOME/.spicetify:$PATH"
 ZSH_THEME="agnosterzak"
